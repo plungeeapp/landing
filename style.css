@@ -1,0 +1,82 @@
+@font-face {
+font-family: 'Outfit';
+    src: url('./fonts/Outfit-Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Supports a range of weights from 100 to 900 */
+    font-style: normal; /* Assuming this is a regular font and not italic */
+    font-display: swap; /* Ensures text is displayed immediately using fallback font while the font loads */
+}
+
+:root {
+    --background: #fff;
+    --text: #000;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+strong {
+    font-weight: 600;
+}
+  
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px;
+}
+
+.titles {
+    align-items: left;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--background);
+    border: none;
+    color: var(--text);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-secondary {
+    background: none;
+    border: 2px solid black;
+}
+
+.action-btn-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        justify-content: center;
+        align-items: start;
+        margin: 30px 50px; 
+        height: 100%;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 58px;
+    }
+}
